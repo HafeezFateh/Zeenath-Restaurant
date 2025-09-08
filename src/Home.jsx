@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <div>
-      <div className="max-w-7xl mx-auto p-7 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto py-7 px-5 flex justify-between items-center">
   {/* Logo */}
   <img 
     src="./Zeenath1.svg" 
@@ -27,7 +27,8 @@ function Home() {
     onClick={toggleMenu} 
     className="lg:hidden text-stone-300 material-symbols-outlined"
   >
-    menu
+    <span className="lg:hidden">menu</span>
+    
   </button>
 </div>
 
@@ -59,7 +60,7 @@ function Home() {
 
         <div id="about" className="flex max-w-7xl mx-auto flex-col p-10 lg:items-center justify-center mt-40">
             <h1 className="text-5xl font-semibold text-stone-400">About</h1>
-            <p className="text-2xl pt-5 lg:p-3  text-stone-500 lg:text-center">With over 50 years of experience, our restaurant has become a trusted name in Gudiyatham, serving generations of families with authentic flavors and warm service. What began as a small family-run eatery has now grown into multiple restaurants, each carrying forward the same tradition of taste, quality, and hospitality that has defined us for half a century. </p>
+            <p className="text-2xl pt-5 lg:p-3 text-justify text-stone-500 lg:text-center">With over 50 years of experience, our restaurant has become a trusted name in Gudiyatham, serving generations of families with authentic flavors and warm service. What began as a small family-run eatery has now grown into multiple restaurants, each carrying forward the same tradition of taste, quality, and hospitality that has defined us for half a century. </p>
 
         </div>
 
