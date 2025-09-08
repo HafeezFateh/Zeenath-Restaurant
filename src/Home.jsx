@@ -7,17 +7,30 @@ function Home() {
 
   return (
     <div>
-        <div className="max-w-7xl  mx-auto p-7 flex justify-between items-center">
-            <img src="./Zeenath1.svg" alt="" className="w-[220px] lg:w-[300px]" />
-            <div className="hidden rounded-xl bg-stone-50/10 shadow-lg lg:flex items-center p-2 px-7 gap-4">
-                <a href="#about" className="font-semibold text-stone-300">About</a>
-                <a href="#menu" className="font-semibold text-stone-300">Menu</a>
-                <a href="#contact" className="font-semibold text-stone-300">Contact us</a>
-            </div>
-            <span onClick={toggleMenu}  className="material-symbols-outlined text-stone-300 lg:hidden "><span className="lg:hidden">menu</span></span>
+      <div className="max-w-7xl mx-auto p-7 flex justify-between items-center">
+  {/* Logo */}
+  <img 
+    src="./Zeenath1.svg" 
+    alt="Zeenath Logo" 
+    className="w-[220px] lg:w-[300px]" 
+  />
 
-            
-        </div>
+  {/* Desktop Menu */}
+  <div className="hidden lg:flex items-center gap-6 rounded-xl bg-stone-50/10 shadow-lg p-2 px-7">
+    <a href="#about" className="font-semibold text-stone-300 hover:text-red-400 transition">About</a>
+    <a href="#menu" className="font-semibold text-stone-300 hover:text-red-400 transition">Menu</a>
+    <a href="#contact" className="font-semibold text-stone-300 hover:text-red-400 transition">Contact us</a>
+  </div>
+
+  {/* Mobile Menu Icon */}
+  <button 
+    onClick={toggleMenu} 
+    className="lg:hidden text-stone-300 material-symbols-outlined"
+  >
+    menu
+  </button>
+</div>
+
         {open  && 
          <div className="-mt-5 rounded-xl bg-stone-50/10 shadow-lg flex flex-col w-fit float-right backdrop-blur-2xl mx-5 items-center p-3 px-10 gap-4">
                 <a href="#about" className="font-semibold text-stone-300">About</a>
@@ -28,8 +41,8 @@ function Home() {
         
 
         <div className="max-w-7xl mx-auto mt-30 lg:mt-40 gap-2 flex  items-center justify-center flex-col">
-            <h1 className="text-4xl text-center px-10 lg:text-6xl font-semibold font-inter lg:text-center justify-center items-center  bg-gradient-to-r from-white to-stone-500 text-transparent bg-clip-text">Welcome to Zeenath Restaurant</h1>
-            <div className="flex text-red-700/80 gap-3 text-sm  lg:text-2xl">
+            <h1 className="text-3xl text-center px-10 lg:text-6xl font-semibold font-inter lg:text-center justify-center items-center  bg-gradient-to-r from-white to-stone-500 text-transparent bg-clip-text">Welcome to Zeenath Restaurant</h1>
+            <div className="flex text-red-700/80 gap-3 text-xs font-light  lg:text-2xl">
                 <p>Zestful </p>
                 <p className="text-stone-400">Exotic </p>
                 <p>Elegant </p>
