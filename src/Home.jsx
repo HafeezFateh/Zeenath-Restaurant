@@ -107,10 +107,10 @@ function Home() {
             </form>
         </div>
 
-        <footer className=" mt-50 border-t border-red-700/30 flex flex-col items-center justify-center  bg-stone-300 ">
+        <footer className=" mt-50 border-t border-red-700/30 flex flex-col items-center justify-center  bg-stone-300/10 ">
             <img src="./Zeenath1.svg" className="w-[400px] p-10 " alt="" />
             <div className="flex justify-end w-full">
-                <div className="p-1 m-4 px-4 bg-stone-600/40 rounded-2xl flex items-center gap-3">
+                <div className="p-1 m-4 px-4 bg-stone-600/20 rounded-2xl flex items-center gap-3">
                     <img src="./greatxt.png" className="w-[30px]" alt="" />
                     <p className="text-stone-900  font-inter">Made by GreatXt</p>
                 </div>
