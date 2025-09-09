@@ -17,9 +17,9 @@ function Home() {
 
   {/* Desktop Menu (hidden on mobile, visible on lg+) */}
   <div className="hidden lg:flex items-center gap-6 rounded-xl bg-stone-900/30 shadow-lg p-2 px-7">
-    <a href="#about" className="font-semibold text-stone-900 hover:text-red-400 transition">About</a>
-    <a href="#menu" className="font-semibold text-stone-900 hover:text-red-400 transition">Menu</a>
-    <a href="#contact" className="font-semibold text-stone-900 hover:text-red-400 transition">Contact us</a>
+    <a href="#about" className="font-semibold text-stone-900 hover:text-white transition">About</a>
+    <a href="#menu" className="font-semibold text-stone-900 hover:text-white transition">Menu</a>
+    <a href="#contact" className="font-semibold text-stone-900 hover:text-white transition">Contact us</a>
   </div>
 
   {/* Mobile Menu Icon (visible on mobile, hidden on lg+) */}
