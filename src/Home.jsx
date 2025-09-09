@@ -38,8 +38,8 @@ function Home() {
          }
         
 
-        <div className="max-w-7xl mx-auto mt-30 lg:mt-40 gap-2 flex  items-center justify-center flex-col ">
-            <h1 className="text-3xl text-center px-10 lg:text-6xl font-semibold font-inter lg:text-center justify-center items-center  bg-gradient-to-t from-stone-600 to-stone-900 text-transparent bg-clip-text">Welcome to Zeenath Restaurant</h1>
+        <div className="max-w-7xl mx-auto mt-30 lg:mt-25 gap-2 flex  items-center justify-center flex-col ">
+            <h1 className="text-3xl text-center px-10 lg:text-6xl  font-semibold font-inter lg:text-center justify-center items-center  bg-gradient-to-t from-stone-600 to-stone-900 text-transparent bg-clip-text">Welcome to Zeenath Restaurant</h1>
            
             <div className="flex text-red-700/80 gap-3 text-[10px] font-light  lg:text-2xl ">
                 <p>Zestful </p>
@@ -51,6 +51,17 @@ function Home() {
                 <p>Homely </p>
             </div>
             
+        </div>
+
+        <div className="px-7 py-5 flex gap-5 justify-center">
+            <a href="https://share.google/k6hbx9RhxwXiiqZg9" className="flex gap-2 text-stone-200 font-inter rounded-xl p-2 px-5 w-fit bg-stone-800">
+                Rate us
+                <span class="material-symbols-outlined ">star</span>
+            </a>
+             <a className="flex gap-2 text-stone-200 font-inter  rounded-xl p-2 px-5 w-fit bg-stone-800">
+                Offers
+                <span class="material-symbols-outlined">percent_discount</span>
+            </a>
         </div>
 
         <div className="flex justify-center mt-10 ">
@@ -116,7 +127,7 @@ function Home() {
 
         <div id="contact" className="max-w-7xl mx-auto mt-40 p-10">
             <h1 className="text-3xl lg:text-5xl p-10 text-stone-900 text-center font-semibold">Contact us</h1>
-            <a href="https://wa.me/919789706557?text=Hello,%20I%20have%20a%20suggestion!" target="_blank" className="block text-center bg-lime-600 p-2 rounded-xl text-white  font-inter">Drop a message</a>
+            <a href="https://wa.me/919789706557?text=Hello,%20I%20have%20a%20suggestion!" target="_blank" className="block text-center bg-red-700 p-2 rounded-xl text-white  font-inter">Drop a message</a>
             {/* <form action="" className="">
                 <label htmlFor="" className="block py-2 text-xl text-stone-800 ">Name</label>
                 <input type="text" className="bg-stone-500/30 w-full rounded-lg p-1"/>
