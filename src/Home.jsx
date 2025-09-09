@@ -38,9 +38,10 @@ function Home() {
          }
         
 
-        <div className="max-w-7xl mx-auto mt-30 lg:mt-40 gap-2 flex  items-center justify-center flex-col">
+        <div className="max-w-7xl mx-auto mt-30 lg:mt-40 gap-2 flex  items-center justify-center flex-col ">
             <h1 className="text-3xl text-center px-10 lg:text-6xl font-semibold font-inter lg:text-center justify-center items-center  bg-gradient-to-t from-stone-600 to-stone-900 text-transparent bg-clip-text">Welcome to Zeenath Restaurant</h1>
-            <div className="flex text-red-700/80 gap-3 text-xs font-light  lg:text-2xl">
+           
+            <div className="flex text-red-700/80 gap-3 text-[10px] font-light  lg:text-2xl ">
                 <p>Zestful </p>
                 <p className="text-stone-800">Exotic </p>
                 <p>Elegant </p>
@@ -49,20 +50,21 @@ function Home() {
                 <p className="text-stone-800">Tasty </p>
                 <p>Homely </p>
             </div>
+            
         </div>
 
         <div className="flex justify-center mt-10 ">
             <img src="./logo.svg" alt=""  className="opacity-90"/>
         </div>
 
-        <div id="about" className="flex max-w-7xl mx-auto flex-col p-10 lg:items-center justify-center mt-40">
-            <h1 className="text-5xl font-semibold text-stone-900">About</h1>
+        <div id="about" className="flex max-w-7xl mx-auto flex-col p-7 lg:items-center justify-center mt-40">
+            <h1 className="text-3xl lg:text-5xl font-semibold text-stone-900">About</h1>
             <p className="text-2xl pt-5 lg:p-3 text-justify text-stone-700 lg:text-center">With over 50 years of experience, our restaurant has become a trusted name in Gudiyatham, serving generations of families with authentic flavors and warm service. What began as a small family-run eatery has now grown into multiple restaurants, each carrying forward the same tradition of taste, quality, and hospitality that has defined us for half a century. </p>
 
         </div>
 
-        <div id="menu" className="max-w-7xl mx-auto p-10">
-            <h1 className="font-semibold text-5xl text-stone-900 text-center p-10">Our Menu</h1>
+        <div id="menu" className="max-w-7xl mx-auto p-7">
+            <h1 className="font-semibold text-3xl lg:text-5xl text-stone-900 text-center p-10">Our Menu</h1>
             <div className="grid grid-cols-1 gap-7 lg:grid-cols-3 lg:gap-4">
                 <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
                     <img src="./biryani.jpg" className="rounded-xl w-full h-[200px]" alt="" />
@@ -81,6 +83,26 @@ function Home() {
                     <p className="font-semibold text-xl text-center p-2 text-stone-800">Butter Paneer</p>
                 </div>
                 <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
+                    <img src="./fish.jpg" className="rounded-xl w-full h-[200px]" alt="" />
+                    <p className="font-semibold text-xl text-center p-2 text-stone-800">Wanjiram Fish</p>
+                </div>
+                <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
+                    <img src="./prawn.jpg" className="rounded-xl w-full h-[200px]" alt="" />
+                    <p className="font-semibold text-xl text-center p-2 text-stone-800">Prawns</p>
+                </div>
+                <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
+                    <img src="./gobim.jpg" className="rounded-xl w-full h-[200px]" alt="" />
+                    <p className="font-semibold text-xl text-center p-2 text-stone-800">Gobi manchurian</p>
+                </div>
+                <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
+                    <img src="./paratha.jpg" className="rounded-xl w-full h-[200px]" alt="" />
+                    <p className="font-semibold text-xl text-center p-2 text-stone-800">Puff parota</p>
+                </div>
+                <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
+                    <img src="./roti.jpg" className="rounded-xl w-full h-[200px]" alt="" />
+                    <p className="font-semibold text-xl text-center p-2 text-stone-800">Butter/plain Naan</p>
+                </div>
+                <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
                     <img src="./fr.jpg" className="rounded-xl w-full h-[200px]" alt="" />
                     <p className="font-semibold text-xl text-center p-2 text-stone-800">Fried Rice</p>
                 </div>
@@ -93,8 +115,9 @@ function Home() {
         </div>
 
         <div id="contact" className="max-w-7xl mx-auto mt-40 p-10">
-            <h1 className="text-5xl p-10 text-stone-900 text-center font-semibold">Contact us</h1>
-            <form action="" className="">
+            <h1 className="text-3xl lg:text-5xl p-10 text-stone-900 text-center font-semibold">Contact us</h1>
+            <a href="https://wa.me/919789706557?text=Hello,%20I%20have%20a%20suggestion!" target="_blank" className="block text-center bg-lime-600 p-2 rounded-xl text-white  font-inter">Drop a message</a>
+            {/* <form action="" className="">
                 <label htmlFor="" className="block py-2 text-xl text-stone-800 ">Name</label>
                 <input type="text" className="bg-stone-500/30 w-full rounded-lg p-1"/>
                 <label htmlFor="" className="block py-2 text-xl text-stone-800 ">Email</label>
@@ -104,7 +127,7 @@ function Home() {
                 <div className="flex justify-end mt-10">
                     <input type="submit" className="bg-lime-700/90 text-stone-900 font-semibold px-20 py-2 rounded-lg" />
                 </div>
-            </form>
+            </form> */}
         </div>
 
         <footer className=" mt-50 border-t border-red-700/30 flex flex-col items-center justify-center  bg-stone-300/10 ">
