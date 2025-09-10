@@ -86,7 +86,7 @@ function Home() {
                     <p className="font-semibold text-xl text-center p-2 text-stone-800">Tandoori Chicken</p>
                 </div>
                   <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
-                    <img src="./bc.jpg" className="rounded-xl w-full h-[200px]" alt="" />
+                    <img src="./bc.jpeg" className="rounded-xl w-full h-[200px]" alt="" />
                     <p className="font-semibold text-xl text-center p-2 text-stone-800">Butter Chicken</p>
                 </div>
                    <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
@@ -100,6 +100,10 @@ function Home() {
                 <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
                     <img src="./prawn.jpg" className="rounded-xl w-full h-[200px]" alt="" />
                     <p className="font-semibold text-xl text-center p-2 text-stone-800">Prawns</p>
+                </div>
+                 <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
+                    <img src="./paya.jpg" className="rounded-xl w-full h-[200px]" alt="" />
+                    <p className="font-semibold text-xl text-center p-2 text-stone-800">Gobi manchurian</p>
                 </div>
                 <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
                     <img src="./gobim.jpg" className="rounded-xl w-full h-[200px]" alt="" />
