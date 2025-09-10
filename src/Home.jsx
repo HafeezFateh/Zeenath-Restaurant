@@ -103,7 +103,7 @@ function Home() {
                 </div>
                  <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
                     <img src="./paya.jpg" className="rounded-xl w-full h-[200px]" alt="" />
-                    <p className="font-semibold text-xl text-center p-2 text-stone-800">Gobi manchurian</p>
+                    <p className="font-semibold text-xl text-center p-2 text-stone-800">Mutton Paya</p>
                 </div>
                 <div className="rounded-xl    gap-5 border border-stone-400  p-3 shadow">
                     <img src="./gobim.jpg" className="rounded-xl w-full h-[200px]" alt="" />
