@@ -58,7 +58,7 @@ function Home() {
                 Rate us
                 <span class="material-symbols-outlined ">star</span>
             </a>
-             <a className="flex gap-2 text-stone-200 font-inter  rounded-xl p-2 px-5 w-fit bg-stone-800">
+             <a href="https://chat.whatsapp.com/I5PxfM26MUXBwDBefLBCRz?mode=ems_share_c" className="flex gap-2 text-stone-200 font-inter  rounded-xl p-2 px-5 w-fit bg-stone-800">
                 Offers
                 <span class="material-symbols-outlined">percent_discount</span>
             </a>
