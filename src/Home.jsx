@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 function Home() {
     const [open, setOpen] = useState(false);
@@ -38,8 +39,13 @@ function Home() {
          }
         
 
+        <motion.div
+         initial={{ opacity: 0, y: 0 }}   // start state
+        animate={{ opacity: 1, y: 0 }}    // end state
+        transition={{ duration: 0.8 }} >
+       
         <div className="max-w-7xl mx-auto mt-30 lg:mt-25 gap-2 flex  items-center justify-center flex-col ">
-            <h1 className="text-3xl text-center px-10 lg:text-6xl  font-semibold font-inter lg:text-center justify-center items-center  bg-gradient-to-t from-stone-600 to-stone-900 text-transparent bg-clip-text">Welcome to Zeenath Restaurant</h1>
+            <h1 className="text-2xl  text-center px-10 lg:text-6xl  font-semibold font-inter lg:text-center justify-center items-center  bg-gradient-to-t from-stone-600 to-stone-900 text-transparent bg-clip-text">Welcome to Zeenath Restaurant</h1>
            
             <div className="flex text-red-700/80 gap-3 text-[10px] font-light  lg:text-2xl ">
                 <p>Zestful </p>
@@ -54,25 +60,35 @@ function Home() {
         </div>
 
         <div className="px-7 py-5 flex gap-5 justify-center">
-            <a href="https://share.google/k6hbx9RhxwXiiqZg9" className="flex gap-2 text-stone-200 font-inter rounded-xl p-2 px-5 w-fit bg-stone-800">
+            <a href="https://share.google/k6hbx9RhxwXiiqZg9" className="flex gap-2 text-stone-200 font-inter rounded-xl p-1 px-5 w-fit bg-stone-800">
                 Rate us
                 <span class="material-symbols-outlined ">star</span>
             </a>
-             <a href="https://chat.whatsapp.com/I5PxfM26MUXBwDBefLBCRz?mode=ems_share_c" className="flex gap-2 text-stone-200 font-inter  rounded-xl p-2 px-5 w-fit bg-stone-800">
+             <a href="https://chat.whatsapp.com/I5PxfM26MUXBwDBefLBCRz?mode=ems_share_c" className="flex gap-2 text-stone-200 font-inter  rounded-xl p-1 px-5 w-fit bg-stone-800">
                 Offers
                 <span class="material-symbols-outlined">percent_discount</span>
             </a>
         </div>
 
-        <div className="flex justify-center mt-10 ">
+        <div className="flex justify-center mt-10 animate-pulse">
             <img src="./logo.svg" alt=""  className="opacity-90"/>
         </div>
 
-        <div id="about" className="flex max-w-7xl mx-auto flex-col p-7 lg:items-center justify-center mt-40">
+         </motion.div>
+
+
+       
+        
+      
+        <motion.div   initial={{ opacity: 0, y: 50 }}       // hidden
+        whileInView={{ opacity: 1, y: 0 }}     // visible when in viewport
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true, amount: 0.3 }} 
+         id="about" className="flex max-w-7xl mx-auto flex-col p-7 lg:items-center justify-center mt-40">
             <h1 className="text-3xl lg:text-5xl font-semibold text-stone-900">About</h1>
             <p className="text-2xl pt-5 lg:p-3 text-justify text-stone-700 lg:text-center">With over 50 years of experience, our restaurant has become a trusted name in Gudiyatham, serving generations of families with authentic flavors and warm service. What began as a small family-run eatery has now grown into multiple restaurants, each carrying forward the same tradition of taste, quality, and hospitality that has defined us for half a century. </p>
 
-        </div>
+        </motion.div>
 
         <div id="menu" className="max-w-7xl mx-auto p-7">
             <h1 className="font-semibold text-3xl lg:text-5xl text-stone-900 text-center p-10">Our Menu</h1>
